@@ -1,0 +1,14 @@
+<template>
+    <div style="background-color: yellow; padding: 16px;">
+        <style>
+            :root {
+                color: green;
+            }
+        </style>
+
+        //called child lwc here and setting the values of color thru parent lwc
+        <c-child label="Enter your squad's name" color={color} help-text={helpText}></c-child>
+    </div>
+</template>
+
+

@@ -1,0 +1,11 @@
+<template>
+    <div class="input-container">
+        <label for="input" class="input-label" style={labelStyles}> {label}</label>
+        <input type="text" id="input" class="input-field" />
+
+        //only display helptext if its true
+        <template if:true={helpText}>
+            <div class="input-help-text">{helpText}</div>
+        </template>
+    </div>
+</template>
